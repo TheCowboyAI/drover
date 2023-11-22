@@ -14,8 +14,8 @@ async fn main() -> std::io::Result<()> {
     use actix_web::*;
     use leptos::*;
     use leptos_actix::{generate_route_list, LeptosRoutes};
-    use cim_web::app::*;
-    use cim_web::model::llama::get_language_model;
+    use drover::app::*;
+    use drover::model::llama::get_language_model;
     use api::ws;
 
     let conf = get_configuration(None).await.unwrap();
@@ -91,7 +91,7 @@ pub fn main() {
     // prefer using `cargo leptos serve` instead
     // to run: `trunk serve --open --features ssg`
     use leptos::*;
-    use cim_web::app::*;
+    use drover::app::*;
     use wasm_bindgen::prelude::wasm_bindgen;
     use api::ws;
 

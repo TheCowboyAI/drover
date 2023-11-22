@@ -160,11 +160,11 @@ cfg_if! {
 
                     for new_user_message in recieve_new_user_message {
                         let msg = Message::new(Some(Role::User), new_user_message);
-                        if msg == "" {
+                        if msg.content == "" {
                             //end conversation
                             break
                         }
-                        log::info!("Received New User Message:{}", new_user_message);
+                        log::info!("Received New User Message:{}", msg.content);
                         let _ = infer(model_cloned.clone(), &mut inference_session, msg, send_inference.clone());
                     }
                 });
