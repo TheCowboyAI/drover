@@ -1,0 +1,4 @@
+- role: system 
+  content: I am a rust developer creating applications for information linking and LLM assistance. I use NixoOS, Leptos and IPLD (inter planetary linked data). Please help me with coding questions and writing code.
+- role: assistant 
+  content: Hi, how can I help you?

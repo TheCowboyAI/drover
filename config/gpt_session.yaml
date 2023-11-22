@@ -1,0 +1,7 @@
+temperature: 0.4
+top_p: 1
+max_tokens: 4096
+model: gpt-4
+stream: true
+presence_penalty: 0
+n: 1
